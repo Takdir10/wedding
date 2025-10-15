@@ -1,0 +1,564 @@
+:root {
+	--pink: #f14e95;
+	--bg: #0a0a0a;
+	--shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+body {
+	font-size: 1.2rem;
+	font-family: "Work Sans", sans-serif;
+	min-height: 5000px;
+}
+
+.hero {
+	min-height: 100vh;
+	position: relative;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(image/bg.jpg);
+	z-index: -1;
+	background-size: cover;
+	filter: grayscale();
+	background-position: center;
+}
+
+.hero h1, .hero h4, .hero p {
+	text-shadow: var(--shadow);
+}
+
+.hero h1 {
+	font-family: "Sacramento", cursive;
+	font-size: 6rem;
+	margin-top: 15px;
+}
+
+.hero h4 {
+	font-size: 1.6rem;
+}
+
+.hero p {
+	font-size: 1.4rem;
+}
+
+.hero a {
+	color: var(--pink);
+	background-color: white;
+}
+
+.hero a:hover {
+	background-color: var(--pink);
+	color: white;
+}
+
+#days {
+  font-size: 20px;
+  color:  #fff ;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#hours {
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#minutes {
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#seconds {
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#timer {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 30px;
+}
+
+span {
+  display: block;
+  font-size: 12px;
+  color: white;
+}
+
+table td {
+	background-color: var(--pink);
+	width: 75px;
+	height: 75px;
+}
+
+.mynavbar {
+	background-color: rgba(255, 255, 255, 0.5) !important;
+	backdrop-filter: blur(4px);
+}
+
+.mynavbar .nav-link {
+	text-transform: uppercase;
+	display: inline-block;
+	color: black;
+	text-align: center;
+	font-size: 1.2rem;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.mynavbar .nav-link:hover {
+	backdrop-filter: blur(6px);
+}
+
+.home {
+	background-image: url(image/floral.webp);
+	min-height: 100vh;
+	background-size: cover;
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+}
+
+.home h2, 
+.info h2, 
+.story h2, 
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+	color: var(--pink);
+	font-family: 'Sacramento';
+	font-size: 5rem;
+	font-weight: bold;
+}
+
+.home h3 {
+	color: #444;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.home p, 
+.story p,
+.gifts p {
+	font-size: 1.1rem;
+	color: #666;
+}
+
+.home .couple {
+	margin-top: 50px;
+}
+
+.home .couple h3 {
+	font-family: 'Sacramento';
+	color: var(--pink);
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+.home .couple img {
+	width: 100%;
+}
+
+.home .couple p {
+	font-weight: none;
+}
+
+.home .heart {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	border-radius: 50%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(65px);
+	background-color: white;
+}
+
+.home .heart i {
+	margin: auto;
+	color: var(--pink);
+}
+
+.info,
+.rsvp {
+	background-color: var(--bg);
+	color: white;
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+}
+
+.info h2 {
+	color: var(--pink);
+	font-family: 'Sacramento';
+	font-size: 5rem;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.info .deskripsi {
+	font-size: 1 rem;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: -30px;
+}
+
+.info .alamat {
+	font-size: 1.1rem;
+}
+
+.info span {
+	font-size: 14px;
+}
+
+.info .card {
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	color: white !important;
+	border: 1px solid #999;
+}
+
+.info .card-header {
+	text-transform: uppercase;
+	border-bottom: 1px solid #999;
+	letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+	font-size: 1rem;
+}
+
+.info .card-footer {
+	font-size: 0.9rem;
+	border-top: 1px solid #999;
+	color: white;
+}
+
+.story,
+.gallery,
+.gifts {
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+	min-height: 100vh;
+}
+
+.story p {
+	font-size: 1rem;
+	font-weight: 200;
+}
+
+.timeline {
+	list-style: none;
+	padding: 1.4rem 0;
+	margin-top: 1rem;
+	position: relative;
+}
+
+.timeline::before {
+	content: '';
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	width: 1px;
+	background-color: #ccc;
+	left: 50%;
+}
+
+.story span {
+	color: black;
+}
+
+.timeline li {
+	margin-top: 1.5rem;
+	position: relative;
+}
+
+.timeline li::before,
+.timeline li:after {
+	content: '';
+	display: table;
+}
+
+.timeline li::after {
+	clear: both;
+}
+
+.timeline li .timeline-image {
+	width: 150px;
+	height: 150px;
+	background-color: #ccc;
+	left: 50%;
+	position: absolute;
+	border-radius: 50%;
+	transform: translateX(-50%);
+	background-size: cover;
+	background-position: center;
+}
+
+.timeline li .timeline-panel {
+	width: 40%;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 2rem;
+	position: relative;
+	border-radius: 8px;
+}
+
+.timeline li .timeline-panel::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	border-top: 15px solid transparent;
+	border-left: 15px solid #ccc;
+	border-right: 0 solid #ccc;
+	border-bottom: 15px solid transparent;
+	right: -15px;
+	top: 80px;
+}
+
+.timeline li .timeline-panel::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	border-top: 14px solid transparent;
+	border-left: 14px solid #fff;
+	border-right: 0 solid #fff;
+	border-bottom: 14px solid transparent;
+	right: -13px;
+	top: 81px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+	float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+	border-left-width: 0;
+	border-right-width: 15px;
+	left: -15px;
+	right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+	border-left-width: 0;
+	border-right-width: 14px;
+	left: -13px;
+	right: auto;
+}
+
+.gallery {
+	background-color: #ddd;
+}
+
+.rsvp button {
+	background-color: var(--pink);
+	color: white;
+	border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+	background-color: white;
+	color: var(--pink);
+	border: 1px solid white;
+}
+
+.rsvp textarea {
+	font-size: 1rem;
+}
+
+.rsvp .ucap {
+	padding-left: 10px;
+}
+
+footer {
+	padding: 2rem;
+	background-color: var(--pink);
+	color: white;
+	min-height: 200px;
+}
+
+footer a {
+	color: var(--bg);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: white;
+}
+
+footer li {
+	list-style: none;
+	display: inline;
+	margin-left: 5px;
+}
+
+.audio-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 2.5rem;
+	position: fixed;
+	bottom: 5rem;
+	right: 2rem;
+	cursor: pointer;
+	color: white;
+	opacity: 0.5;
+	mix-blend-mode: difference;
+	animation: rotating 4s linear infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 0;
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 1200px) {
+	.home .heart {
+		transform: translateX(-50%) translateY(45px);
+	}
+}
+
+@media (max-width: 992px) {
+	html {
+		font-size: 80%;
+	}
+
+	table td {
+		width: 60px;
+		height: 60px;
+	}
+
+	#days, #minutes, #hours, #seconds {
+		font-size: 18px;
+	}
+
+	.home .heart {
+		display: none;
+	}
+
+	.timeline::before {
+		left: 60px;
+	}
+
+	.timeline li .timeline-image {
+		left: 15px;
+		margin-left: 45px;
+		top: 16px;
+	}
+
+	.timeline li .timeline-panel {
+		width: calc((100% - 200px));
+		float: right;
+	}
+
+	.timeline li .timeline-panel::before {
+		border-left-width: 0;
+		border-right-width: 15px;
+		left: -15px;
+		right: auto;
+	}
+
+	.timeline li .timeline-panel::after {
+		border-left-width: 0;
+		border-right-width: 14px;
+		left: -13px;
+		right: auto;
+	}
+
+	.timeline li .timeline-panel::before {
+		top: 50px;
+	}
+
+	.timeline li .timeline-panel::after {
+		top: 51px;
+	}
+
+	.rsvp h2 {
+		font-size: 4rem;
+	}
+
+	.home .couple h3 {
+		font-size: 2.5rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 75%;
+	}
+
+	table td {
+		width: 55px;
+		height: 55px;
+	}
+
+	#days, #minutes, #hours, #seconds {
+		font-size: 16px;
+	}
+
+	.sticky-top {
+		overflow: hidden;
+	}
+
+	.timeline li .timeline-image {
+		width: 140px;
+		height: 140px;
+	}
+
+}
+
+@media (max-width: 576px) {
+	html {
+		font-size: 70%;
+	}
+
+	table td {
+		width: 50px;
+		height: 50px;
+	}
+
+	#days, #minutes, #hours, #seconds {
+		font-size: 14px;
+	}
+
+	.timeline li .timeline-image {
+		width: 80px;
+		height: 80px;
+
+	}
+
+	.timeline li .timeline-panel {
+		width: 65%;
+		transform: translateX(-20px);
+	}
+
+	.rsvp h2, 
+	.home h2,
+	.info h2,
+	.gallery h2,
+	.gifts h2,
+	.story h2 {
+		font-size: 3.5rem;
+	}
+
+}
